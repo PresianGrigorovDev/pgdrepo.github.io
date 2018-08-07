@@ -1,0 +1,223 @@
+
+:root {
+    --gradientc1: #F78FAD;
+    --gradientc2: #FDEB82;
+    
+    --aniGradientC1: #8CC9F0;
+    --aniGradientC2: #A89CC8;
+    
+    --themeGradient: #EFA8B0;
+    --appGradient: #A89CC8;
+    --tweakGradient: #8CC9F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: linear-gradient(45deg, var(--gradientc1), var(--gradientc2));
+    font-family: 'Lato', 'Segoe UI', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: visible;
+}
+
+.row { max-width: 1140px; margin: 0 auto, 0 auto; }
+
+.clearfix {zoom: 1},
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+}
+
+p, ul, li { cursor: default; }
+
+/* ---- HEADINGS  ---- */
+
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: 1px;
+    text-transform: none;
+    font-weight: 300;
+    cursor: default;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 290%;
+    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 190%;
+    word-spacing: 2px;
+    text-align:center;
+    margin-bottom: 30px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: var(--darkColor);
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.info h2 { padding: 20px 0; margin-top: 50px; }
+
+
+
+/* ================ */
+/* ---- HEADER ---- */
+/* ================ */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+.logo-to-site img {
+    width: 150px;
+    height: auto;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;    
+    width: 150px;
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 50%;
+    margin-left: -75px;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* ================ */
+/* ----  INFO  ---- */
+/* ================ */
+
+.info { border-radius: 10px 10px 0 0; }
+
+.info i {
+    font-size: 400%;
+}
+.info .ion-ios-code-download { color: var(--tweakGradient); }
+.info .ion-md-brush { color: var(--themeGradient); }
+.info .ion-ios-appstore { color: var(--appGradient); }
+
+.info p {
+    font-size: 240%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.info ul {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 25px;
+    list-style-type: none;
+}
+    
+  
+
+/* ==================== */
+/* ----  ADD REPO  ---- */
+/* ==================== */
+
+.addRepo { border-radius: 0 0 10px 10px; }
+
+.btn-add {
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 2.75em;
+    line-height: 2.75em;
+    min-width: 9.25em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+    background-color: transparent;
+    box-shadow:  inset 0 0 0 2px #dddddd;
+    margin-bottom: 15%;
+    transition: background-color 0.4s;
+}
+.btn-add:hover { background-color: #ededed; }
+
+
+/* ================== */
+/* ---- SEPERATOR ----*/
+/* ================== */
+
+.seperator hr {
+    width: 75%;
+    height: 3px;
+    border: 0px;
+    color: whitesmoke;
+    background-color: black;
+    margin: 40px 0;
+    animation: pulse 5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { background-color: var(--gradientc1); }
+    100% { background-color: var(--aniGradientC2); }
+}
+
+
+
+/* ================= */
+/* ---- FOOTER  ---- */
+/* ================= */
+
+footer p {
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 300;
+    font-size: 110%;
+    padding: 50px 0;
+}
+
+
+
+    
+
+
